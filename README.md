@@ -15,7 +15,7 @@ To minimize image size, it's uncommon for additional related tools (such as git 
 ```bash
 docker build \
 --rm \
--t lonly/docker-alpine-java \
+-t lonly/docker-alpine-java:openjdk-8u131 \
 --build-arg VCS_REF=`git rev-parse --short HEAD` \
 --build-arg BUILD_DATE=`date -u +"%Y-%m-%dT%H:%M:%SZ"` .
 ```
