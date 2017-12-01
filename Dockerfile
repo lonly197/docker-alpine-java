@@ -30,10 +30,10 @@ RUN	set -x \
     # Add alpine repo
     && echo http://mirrors.aliyun.com/alpine/v3.6/main/ >> /etc/apk/repositories \
     && echo http://mirrors.aliyun.com/alpine/v3.6/community/ >> /etc/apk/repositories \
-    ## Add base package
-    && apk add --no-cache --upgrade bash \
     ## Update apk package
     && apk update \
+    ## Add base package
+    && apk add --no-cache --upgrade bash \
     ## Install Java
     && apk add --no-cache --upgrade openjdk8 \
     ## Cleanup
