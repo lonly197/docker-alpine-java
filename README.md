@@ -4,6 +4,10 @@
 
 - [![](https://images.microbadger.com/badges/version/lonly/docker-alpine-java.svg)](https://microbadger.com/images/lonly/docker-alpine-java) [![](https://images.microbadger.com/badges/image/lonly/docker-alpine-java.svg)](https://microbadger.com/images/lonly/docker-alpine-java) __latest__ = __openjdk-8u131__
 
+- [![](https://images.microbadger.com/badges/version/lonly/docker-alpine-java:oraclejdk-8u152.svg)](https://microbadger.com/images/lonly/docker-alpine-java:oraclejdk-8u152) [![](https://images.microbadger.com/badges/image/lonly/docker-alpine-java:oraclejdk-8u152.svg)](https://microbadger.com/images/lonly/docker-alpine-java:oraclejdk-8u152) __oraclejdk-8u152__
+
+- [![](https://images.microbadger.com/badges/version/lonly/docker-alpine-java:oraclejre-8u152.svg)](https://microbadger.com/images/lonly/docker-alpine-java:oraclejre-8u152) [![](https://images.microbadger.com/badges/image/lonly/docker-alpine-java:oraclejre-8u152.svg)](https://microbadger.com/images/lonly/docker-alpine-java:oraclejre-8u152) __oraclejre-8u152__
+
 ## Introduction
 
 This image is based on the popular Alpine Linux project, available in the alpine official image. Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
