@@ -8,6 +8,8 @@
 
 - [![](https://images.microbadger.com/badges/version/lonly/docker-alpine-java:oraclejre-8u152.svg)](https://microbadger.com/images/lonly/docker-alpine-java:oraclejre-8u152) [![](https://images.microbadger.com/badges/image/lonly/docker-alpine-java:oraclejre-8u152.svg)](https://microbadger.com/images/lonly/docker-alpine-java:oraclejre-8u152) __oraclejre-8u152__
 
+> Please use corresponding branches from this repo to play with code.
+
 ## Introduction
 
 This image is based on the popular Alpine Linux project, available in the alpine official image. Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
@@ -17,16 +19,6 @@ This variant is highly recommended when final image size being as small as possi
 To minimize image size, it's uncommon for additional related tools (such as git or bash) to be included in Alpine-based images. Using this image as a base, add the things you need in your own Dockerfile (see the alpine image description for examples of how to install packages if you are unfamiliar).
 
 Also, JDK bundle contains lots of unnecessary for Docker image stuff, so it was cleaned up.
-
-## Build
-
-```bash
-docker build \
---rm \
--t lonly/docker-alpine-java \
---build-arg VCS_REF=`git rev-parse --short HEAD` \
---build-arg BUILD_DATE=`date -u +"%Y-%m-%dT%H:%M:%SZ"` .
-```
 
 ## Usage
 
@@ -54,3 +46,11 @@ There are already several images using this image, so you can refer to them as u
 echo 'public class Main { public static void main(String[] args) { System.out.println("Hello World"); } }' > Main.java
 docker run --rm -v "$(pwd)":/mnt --workdir /mnt ldocker-alpine-java sh -c "javac Main.java && java Main"
 ```
+
+## License
+
+![License](https://img.shields.io/github/license/lonly197/docker-alpine-glibc.svg)
+
+## Contact me
+
+- Email: <lonly197@qq.com>
