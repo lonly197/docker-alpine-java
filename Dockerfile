@@ -1,6 +1,6 @@
-FROM alpine:3.6
+FROM alpine:3.8
 
-ARG VERSION=openjdk-8u131
+ARG VERSION=openjdk-8u181
 ARG BUILD_DATE
 ARG VCS_REF
 
@@ -28,8 +28,8 @@ ENV	JAVA_HOME=/usr/lib/jvm/java-1.8-openjdk \
 # Install packages
 RUN	set -x \
     # Add alpine repo
-    && echo http://mirrors.aliyun.com/alpine/v3.6/main/ >> /etc/apk/repositories \
-    && echo http://mirrors.aliyun.com/alpine/v3.6/community/ >> /etc/apk/repositories \
+    && echo http://mirrors.aliyun.com/alpine/v3.8/main/ >> /etc/apk/repositories \
+    && echo http://mirrors.aliyun.com/alpine/v3.8/community/ >> /etc/apk/repositories \
     ## Update apk package
     && apk update \
     ## Add base package
